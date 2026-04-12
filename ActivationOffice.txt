@@ -1,0 +1,43 @@
+1. Abre el símbolo del sistema (CMD) como administrador.
+
+2. Copia y ejecuta el siguiente comando para ir a la ubicación de Office en tu PC:
+
+cd /d %ProgramFiles%\Microsoft Office\Office16
+
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+
+
+
+Si has instalado Office 2019 de 64 bits (x64), deberías ejecutar el primer comando. De lo contrario, si has instalado la versión de 32 bits (x86), ejecuta el segundo comando.
+
+En caso de que no estés seguro de la arquitectura que tienes, ejecuta ambos códigos. Uno mostrará error pero el otro se ejecutará correctamente.
+
+3. Luego, ejecuta el siguiente comando para convertir tu versión Retail a VL (Licencia por Volumen).
+
+
+
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x
+
+
+
+Debes ejecutar el comando para completar la activación Office desde Microsoft 
+
+4. Seguidamente, copia 
+
+
+
+cscript ospp.vbs /setprt:1688
+
+cscript ospp.vbs /unpkey:6MWKP >nul
+
+cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
+
+cscript ospp.vbs /sethst:kms8.msguides.com
+
+cscript ospp.vbs /act
+
+
+
+ en el CMD (símbolo del sistema) y pulsa enter para ejecutarlo. (Es necesario estar conectado a Internet para que funcione).
+
+

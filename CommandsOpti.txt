@@ -1,0 +1,18 @@
+// RUTA DE REGEDIT: Equipo\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options // -> no usar, updateado
+
+
+COMANDO PARA EL POWER SHELL (con privilegios root): irm "https://christitus.com/win" | iex
+|-> Esperar a que inicie la APP, luego ir a la pestaña Tweaks -> seleccionar la opcion Standard -> Y luego seleccionar "Run Tweaks", esperar a que finalice y luego cerrar.
+
+
+COMANDO PARA EL POWER SHELL (con privilegios root): iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
+|-> Usar la opcion "REMOVE ALL BLOATWARE" -> Luego la opcion DISABLE en cortana -> Y luego "DISABLE TELEMETRY / TASKS", luego que finalice cerrar.
+
+
+
+PARÁMETROS DE LANZAMIENTO DE STEAM CS2 (opcional):
+
+-high -threads XX -nod9d3ex1 -d3d9ex -novid -nojoy -console -tickrate 128 +r_dynamic 0 -freq YYY -refreshrate 144 +fps_max 0 +rate 786432 +fps_max_menu 0 -limitvsconst -r_emulate_gl -softparticlesdefaultoff -forcenovsync
+
+//- En -threads XX poner los hilos del procesador, se pueden ver el administrador de tareas (ctrl + shift + esc) -> Rendimiento -> CPU -> Numero de procesadores logicos
+//- En -freq YYY van los hz del moni, no es necesario este comando pero se puede configurar la frecuencia de hz asi tambien.

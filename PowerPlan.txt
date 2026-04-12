@@ -1,0 +1,7 @@
+1) Abrir CMD con privilegios de administrador y luego poner el comando:
+
+	COMANDO PARA EL CMD: powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+2) Luego Win + R y en ejecutar escribir "control" para abrir el panel de control.
+
+3) Luego ir Sistemas y seguridad -> Opciones de energia -> y seleccionar el plan de energia "Maximo Rendimiento"
